@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@layer utilities {
+  .sign-up-btn {
+    border: 1.5px solid #4467ff;
+    box-shadow: 0px 0px 10px 0px #74f;
+  }
+  .sign-in-btn {
+    border: 1px solid #2a2b3a;
+  }
+  .btn {
+    @apply rounded-full px-10 py-3 font-normal;
+  }
+
+  .welcome_text {
+    background: linear-gradient(95deg, #627fff 8.51%, #865bff 94.21%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero_h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    background: linear-gradient(
+      135deg,
+      #fff 30%,
+      rgba(255, 255, 255, 0.5) 84.77%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero_h1_purple {
+    background: linear-gradient(180deg, #9352fe 0%, #2604f2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .hero_description {
+    color: #77798f;
+    text-align: center;
+  }
+  .hero-bg {
+    background: radial-gradient(
+      217.23% 100.08% at 50% 18.33%,
+      rgba(0, 0, 0, 0) 21.67%,
+      #63e 69.34%,
+      #fff 100%
+    );
+  }
+
+  .self-serve-title {
+    background: radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      #fff 30%,
+      rgba(255, 255, 255, 0.5) 84.77%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .self-serve-border {
+    border-radius: 30px;
+    border-top: 2px solid var(--CTA, #4467ff);
+    border-bottom: 2px solid var(--CTA, #4467ff);
+    background: #010314;
+    box-shadow: 0px 16px 80px 0px rgba(102, 77, 255, 0.1);
+  }
+  .features-title {
+    background: radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      #fff 30%,
+      rgba(255, 255, 255, 0.5) 84.77%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .features_card {
+    border-radius: 10.556px;
+    background: linear-gradient(
+      180deg,
+      rgba(63, 92, 247, 0.5) 0%,
+      rgba(133, 93, 255, 0.5) 100%
+    );
+    box-shadow: 0px 12.66667px 31.66667px 0px rgba(102, 77, 255, 0.25);
+  }
+
+  .price-card-border {
+    background: linear-gradient(
+      180deg,
+      rgba(63, 92, 247, 0.5) 0%,
+      rgba(133, 93, 255, 0.5) 100%
+    );
+  }
+  .price-card-bg {
+    background: linear-gradient(
+      180deg,
+      rgba(12, 15, 45, 0.5) 0%,
+      rgba(5, 9, 43, 0.5) 100%
+    );
+  }
+
+  .ready-bg {
+    border-radius: 50px;
+    border-top: 2px solid rgba(137, 6, 149, 0.98);
+    background: radial-gradient(
+      217.23% 100.08% at 50% 18.33%,
+      rgba(0, 0, 0, 0) 21.67%,
+      #63e 69.34%,
+      #fff 100%
+    );
+  }
+
+  .footer-gradient {
+    background: radial-gradient(
+      217.23% 100.08% at 50% 18.33%,
+      rgba(0, 0, 0, 0) 15.67%,
+      #63e 100%
+    );
+  }
+}
